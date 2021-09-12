@@ -113,23 +113,6 @@ class Board:
         else:
             self.win = self.checkWin()
 
-    # def handleFirstClick(self, index):
-    #     """
-    #     Handles the first click different from the rest.
-    #     The first cell clicked will always have the number 0 (no mines around it).
-    #     """
-    #     for i in range(max(0, index[0] - 1), min(self.board_size - 1, index[0] + 1) + 1):
-    #         for j in range(max(0, index[1] - 1), min(self.board_size - 1, index[1] + 1) + 1):
-    #             if (i, j) == (index[0], index[1]):
-    #                 first_cell = Cell(0)  # first cell clicked will never be a mine
-    #                 self.board[i][j] = first_cell
-    #             else:
-    #                 new_cell = Cell(0)
-    #                 self.board[i][j] = new_cell
-    #
-    #     # create the rest of the board
-    #     self.create_board()
-
     def checkWin(self):
         """
         Checks if there is a win in the game.
